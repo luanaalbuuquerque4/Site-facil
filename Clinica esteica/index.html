@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Estética</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="overlay">
+            <div class="logo">
+                <h2>Clínica de Estética</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre">
+        <div class="sobre-nos-container">
+            <div class="img-container">
+                <img src="https://clinicasesteticas.com.br/resources/themes/clinicas-esteticas/assets/images/clinica-estetica.jpg" alt="Imagem da Clínica de Estética">
+            </div>
+            <div class="text-container">
+                <h2>Sobre Nós</h2>
+                <p>Bem-vindo(a) à nossa Clínica de Estética! Oferecemos uma ampla gama de tratamentos de beleza e bem-estar, com profissionais qualificados e equipamentos modernos. Nossa missão é realçar sua beleza natural e promover o bem-estar, com um atendimento personalizado e de alta qualidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Nossos Serviços -->
+    <section id="servicos" class="servicos-bg">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>
+                <img src="https://th.bing.com/th/id/OIP.-v90zrFuImynpdE52oVVuQHaE1" alt="Tratamento Facial">
+                <p>Tratamento Facial</p>
+                <p class="descricao-servico">Cuidados personalizados para uma pele saudável e radiante.</p>
+            </li>
+            <li>
+                <img src="https://th.bing.com/th/id/OIP.4phrjCmNbT1KrffNiN-erwHaH-" alt="Massagem Corporal">
+                <p>Massagem Corporal</p>
+                <p class="descricao-servico">Massagens relaxantes e terapêuticas para aliviar o estresse.</p>
+            </li>
+            <li>
+                <img src="https://th.bing.com/th/id/OIP.JB0eh_Yp1HxQpMfvJCinLwHaEH" alt="Tratamento Corporal">
+                <p>Tratamento Corporal</p>
+                <p class="descricao-servico">Procedimentos que ajudam a melhorar a aparência e a saúde da pele.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="contact-card">
+            <h3>Agende sua Consulta</h3>
+            <p>Entre em contato pelo telefone ou WhatsApp:</p>
+            <div class="contact-info">
+                <a href="https://wa.me/5545998124048" target="_blank">WhatsApp: +45 99812-4048</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
