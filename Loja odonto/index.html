@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odonto Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com imagem de fundo e barra de navegação -->
+    <header>
+        <div class="overlay">
+            <!-- Título principal no topo -->
+           
+            <!-- Subtítulo do logo -->
+            <div class="logo">
+                <h2>Odonto Clinic</h2>
+            </div>
+            <!-- Navegação no rodapé do cabeçalho -->
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre-nos">
+        <div class="sobre-nos-container">
+            <div class="img-container">
+                <img src="https://clinicaboggian.com/wp-content/uploads/2021/04/Dentista-odontoiatra-e-ortodontista-a-chi-mi-rivolgo-scaled.jpg" alt="Dentista atendendo um paciente">
+            </div>
+            <div class="text-container">
+                <div class="section-overlay">
+                    <h2>Sobre Nós</h2>
+                    <p>A franquia de clínicas odontológicas [Nome da Franquia] é uma rede especializada em oferecer serviços de alta qualidade na área de saúde bucal. Com um compromisso com o bem-estar e a satisfação dos pacientes, a franquia se destaca pela excelência no atendimento, profissionais qualificados e tecnologia de ponta. Presentes em diversas regiões, as clínicas [Nome da Franquia] são conhecidas por proporcionar tratamentos modernos e acessíveis, atendendo às necessidades de cada paciente com um atendimento personalizado e de confiança.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- Seção Nossos Serviços -->
+    <section id="servicos" class="servicos-bg">
+        <div class="section-overlay">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.JB0eh_Yp1HxQpMfvJCinLwHaEH?rs=1&pid=ImgDetMain" alt="Limpeza dental" />
+                    <p>Limpeza Dental</p>
+                    <p class="descricao-servico">A limpeza dental remove o tártaro e a placa bacteriana...</p>
+                </li>
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.1bxfgao30d9mbHIQyJeVqQHaE8?rs=1&pid=ImgDetMain" alt="Clareamento" />
+                    <p>Clareamento</p>
+                    <p class="descricao-servico">O clareamento dental visa restaurar o brilho dos dentes...</p>
+                </li>
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.IMdhLDqPV6ZnQZLcwHEGvQHaE8?rs=1&pid=ImgDetMain" alt="Implantes" />
+                    <p>Implantes</p>
+                    <p class="descricao-servico">Os implantes dentários são uma solução eficaz para substituir dentes perdidos...</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção Contato com cartão de agendamento -->
+    <section id="contato">
+        <div class="section-overlay">
+            <div class="contact-card">
+                <h3>Agendar Consulta</h3>
+                <p>Entre em contato no telefone abaixo para agendar a sua consulta</p>
+                <div class="contact-info">
+                    <a href="https://wa.me/5545998124048" target="_blank">WhatsApp: +45 99812-4048</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script JavaScript para rolagem suave -->
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
